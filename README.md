@@ -22,6 +22,7 @@ go build
 ```
 will shown like below(JSON array):
 <details>
+
 ```json
 [
   {
@@ -88,6 +89,7 @@ will shown like below(JSON array):
 ```
 will shown like below(JSON array):
 <details>
+
 ```json
 [{"deviceId":"DEVICE_ID","deviceType":"Meter","hubDeviceId":"HUB_DEVICE_ID","humidity":43,"temperature":24.3,"brightness":{},"battery":100}]
 ```
