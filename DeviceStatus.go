@@ -1,6 +1,6 @@
 package main
 
-import "github.com/nasa9084/go-switchbot/v2"
+import "github.com/nasa9084/go-switchbot/v3"
 
 type DeviceStatus struct {
 	ID                     string                         `json:"deviceId"`
