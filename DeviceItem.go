@@ -15,7 +15,7 @@ type DeviceItem struct {
 	IsGrouped            bool                         `json:"group,omitempty"`
 	IsMaster             bool                         `json:"master,omitempty"`
 	OpenDirection        string                       `json:"openDirection,omitempty"`
-	GroupName            bool                         `json:"groupName,omitempty"`
+	GroupName            string                       `json:"groupName,omitempty"`
 	LockDeviceIDs        []string                     `json:"lockDeviceIds,omitempty"`
 	LockDeviceID         string                       `json:"lockDeviceId,omitempty"`
 	KeyList              []switchbot.KeyListItem      `json:"keyList,omitempty"`

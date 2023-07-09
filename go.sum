@@ -3,5 +3,5 @@ github.com/BurntSushi/toml v1.2.1/go.mod h1:CxXYINrC8qIiEnFrOxCa7Jy5BFHlXnUU2pbi
 github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/nasa9084/go-switchbot/v3 v3.0.0 h1:h2nA0rzm9LhedknOpzUGNDXu77dhrN0sDVueEeigYoY=
-github.com/nasa9084/go-switchbot/v3 v3.0.0/go.mod h1:hrZUTHehZjib+vOCk9Rik5xvKQJ0KZKDOmyiIzonlI4=
+github.com/koizuka/go-switchbot/v3 v3.0.1-0.20230709143720-7873443d0540 h1:0Osu41rA+5EKVk60BcctVqry66arRs2TXeqWbk5ECgs=
+github.com/koizuka/go-switchbot/v3 v3.0.1-0.20230709143720-7873443d0540/go.mod h1:hrZUTHehZjib+vOCk9Rik5xvKQJ0KZKDOmyiIzonlI4=
