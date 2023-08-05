@@ -24,6 +24,7 @@ type DeviceStatus struct {
 	ShakeRange             int                            `json:"shakeRange,omitempty"`
 	IsMoveDetected         bool                           `json:"moveDetected,omitempty"`
 	Brightness             switchbot.BrightnessState      `json:"brightness,omitempty"`
+	LightLevel             int                            `json:"lightLevel,omitempty"`
 	OpenState              switchbot.OpenState            `json:"openState,omitempty"`
 	Color                  string                         `json:"color,omitempty"`
 	ColorTemperature       int                            `json:"colorTemperature,omitempty"`
@@ -62,6 +63,7 @@ func ParseDeviceStatus(status *switchbot.DeviceStatus) *DeviceStatus {
 		ShakeRange:             status.ShakeRange,
 		IsMoveDetected:         status.IsMoveDetected,
 		Brightness:             status.Brightness,
+		LightLevel:             status.LightLevel,
 		OpenState:              status.OpenState,
 		Color:                  status.Color,
 		ColorTemperature:       status.ColorTemperature,
