@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/BurntSushi/toml"
-	"github.com/nasa9084/go-switchbot/v3"
+	"github.com/nasa9084/go-switchbot/v5"
 	"os"
 )
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/nasa9084/go-switchbot/v3"
+import "github.com/nasa9084/go-switchbot/v5"
 
 type DeviceStatus struct {
 	ID                     string                         `json:"deviceId"`
@@ -17,11 +17,7 @@ type DeviceStatus struct {
 	IsGrouped              bool                           `json:"group,omitempty"`
 	IsMoving               bool                           `json:"moving,omitempty"`
 	SlidePosition          int                            `json:"slidePosition,omitempty"`
-	FanMode                int                            `json:"mode,omitempty"`
-	FanSpeed               int                            `json:"speed,omitempty"`
-	IsShaking              bool                           `json:"shaking,omitempty"`
-	ShakeCenter            int                            `json:"shakeCenter,omitempty"`
-	ShakeRange             int                            `json:"shakeRange,omitempty"`
+	FanSpeed               int                            `json:"fanSpeed,omitempty"`
 	IsMoveDetected         bool                           `json:"moveDetected,omitempty"`
 	Brightness             switchbot.BrightnessState      `json:"brightness,omitempty"`
 	LightLevel             int                            `json:"lightLevel,omitempty"`
@@ -56,11 +52,7 @@ func ParseDeviceStatus(status *switchbot.DeviceStatus) *DeviceStatus {
 		IsGrouped:              status.IsGrouped,
 		IsMoving:               status.IsMoving,
 		SlidePosition:          status.SlidePosition,
-		FanMode:                status.FanMode,
 		FanSpeed:               status.FanSpeed,
-		IsShaking:              status.IsShaking,
-		ShakeCenter:            status.ShakeCenter,
-		ShakeRange:             status.ShakeRange,
 		IsMoveDetected:         status.IsMoveDetected,
 		Brightness:             status.Brightness,
 		LightLevel:             status.LightLevel,
