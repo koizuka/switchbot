@@ -34,6 +34,19 @@ type DeviceStatus struct {
 	WorkingStatus          switchbot.CleanerWorkingStatus `json:"workingStatus,omitempty"`
 	OnlineStatus           switchbot.CleanerOnlineStatus  `json:"onlineStatus,omitempty"`
 	Battery                int                            `json:"battery,omitempty"`
+	WaterBaseBattery       int                            `json:"waterBaseBattery,omitempty"`
+	TaskType               switchbot.CleanerTaskType      `json:"taskType,omitempty"`
+	Version                switchbot.DeviceVersion        `json:"version,omitempty"`
+	Direction              string                         `json:"direction,omitempty"`
+	CO2                    int                            `json:"CO2,omitempty"`
+	Mode                   switchbot.Mode                 `json:"mode,omitempty"`
+	NightStatus            switchbot.NightStatus          `json:"nightStatus,omitempty"`
+	Oscillation            switchbot.OscillationStatus    `json:"oscillation,omitempty"`
+	VerticalOscillation    switchbot.OscillationStatus    `json:"verticalOscillation,omitempty"`
+	ChargingStatus         switchbot.ChargingStatus       `json:"chargingStatus,omitempty"`
+	DeviceMode             switchbot.BotDeviceMode        `json:"deviceMode,omitempty"`
+	LeakStatus             switchbot.WaterLeakStatus      `json:"status,omitempty"`
+	UsedElectricity        int                            `json:"usedElectricity,omitempty"`
 }
 
 func ParseDeviceStatus(status *switchbot.DeviceStatus) *DeviceStatus {
@@ -69,5 +82,18 @@ func ParseDeviceStatus(status *switchbot.DeviceStatus) *DeviceStatus {
 		WorkingStatus:          status.WorkingStatus,
 		OnlineStatus:           status.OnlineStatus,
 		Battery:                status.Battery,
+		WaterBaseBattery:       status.WaterBaseBattery,
+		TaskType:               status.TaskType,
+		Version:                status.Version,
+		Direction:              status.Direction,
+		CO2:                    status.CO2,
+		Mode:                   status.Mode,
+		NightStatus:            status.NightStatus,
+		Oscillation:            status.Oscillation,
+		VerticalOscillation:    status.VerticalOscillation,
+		ChargingStatus:         status.ChargingStatus,
+		DeviceMode:             status.DeviceMode,
+		LeakStatus:             status.LeakStatus,
+		UsedElectricity:        status.UsedElectricity,
 	}
 }
